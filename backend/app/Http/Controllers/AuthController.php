@@ -25,6 +25,7 @@ class AuthController extends Controller
             'password'=> bcrypt($request->password),
         ]);
 
+    
         return response()->json([
             'status'=> 'success',
             'message'=> 'Registration successful',
